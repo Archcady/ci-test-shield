@@ -80,6 +80,19 @@
              "AOUT": "DAC0_OUT",
              "DIO_8":"PTC12",
              "DIO_9":"PTC4"
+        },
+        "REALTEK_RTL8195AM": {
+             "AIN_3": "NC",
+             "AIN_4": "NC",
+             "AIN_5": "NC",
+             "AOUT": "DA_0",
+             "PWM_0": "D10",
+             "PWM_1": "D11",
+             "PWM_2": "D12",
+             "PWM_3": "D13",
+             "I2C_SDA": "I2C_SDA",
+             "I2C_SCL": "I2C_SCL",
+             "DEBUG_MSG": 0
         }
     }
 }
