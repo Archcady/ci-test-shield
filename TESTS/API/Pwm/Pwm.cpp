@@ -225,36 +225,36 @@ Case cases[] = {
      Case("PWM_0 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
      Case("PWM_0 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
      //Case("PWM_0 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500,  20 >, greentea_failure_handler), // Test at 500ms 20 times, default 50%duty cycle
-     // Case("PWM_1 Frequency 10ms",  PWM_Period_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10,  1000 >, greentea_failure_handler),  // Test at 10ms 100 times, default 50%duty cycle
-     // Case("PWM_1 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
-     // Case("PWM_1 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
-     //Case("PWM_1 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500,  20 >, greentea_failure_handler), // Test at 500ms 20 times, default 50%duty cycle
+     Case("PWM_1 Frequency 10ms",  PWM_Period_Test< MBED_CONF_APP_PWM_1, D16, D17, 10,  1000 >, greentea_failure_handler),  // Test at 10ms 100 times, default 50%duty cycle
+     Case("PWM_1 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_1, D16, D17, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
+     Case("PWM_1 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_1, D16, D17, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
+     //Case("PWM_1 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_1, D16, D17, 500,  20 >, greentea_failure_handler), // Test at 500ms 20 times, default 50%duty cycle
      // Case("PWM_2 Frequency 10ms",  PWM_Period_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10,  1000 >, greentea_failure_handler),  // Test at 10ms 100 times, default 50%duty cycle
      // Case("PWM_2 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
      // Case("PWM_2 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
      //Case("PWM_2 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500,  20 >, greentea_failure_handler), // Test at 500ms 20 times, default 50%duty cycle
-     // Case("PWM_3 Frequency 10ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10,  1000 >, greentea_failure_handler),  // Test at 10ms 100 times, default 50%duty cycle
-     // Case("PWM_3 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
-     // Case("PWM_3 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
-     //Case("PWM_3 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500,  20 >, greentea_failure_handler),  // Test at 500ms 20 times, default 50%duty cycle
+     // Case("PWM_3 Frequency 10ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, D16, D17, 10,  1000 >, greentea_failure_handler),  // Test at 10ms 100 times, default 50%duty cycle
+     // Case("PWM_3 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, D16, D17, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
+     // Case("PWM_3 Frequency 100ms", PWM_Period_Test< MBED_CONF_APP_PWM_3, D16, D17, 100, 100 >, greentea_failure_handler),  // Test at 100ms 100 times, default 50%duty cycle
+     //Case("PWM_3 Frequency 500ms", PWM_Period_Test< MBED_CONF_APP_PWM_3, D16, D17, 500,  20 >, greentea_failure_handler),  // Test at 500ms 20 times, default 50%duty cycle
 
     // Test Duty Cycle width (10%->90%)
     Case("PWM_0 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
     Case("PWM_0 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
     Case("PWM_0 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
     //Case("PWM_0 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500 >, greentea_failure_handler),   // Test 500ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_1 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_1 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_1 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
-    //Case("PWM_1 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500>, greentea_failure_handler),    // Test 500ms Frequency with 10% to 90% duty cycle
+    Case("PWM_1 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, D16, D17, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
+    Case("PWM_1 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, D16, D17, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
+    Case("PWM_1 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, D16, D17, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
+    //Case("PWM_1 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_1, D16, D17, 500>, greentea_failure_handler),    // Test 500ms Frequency with 10% to 90% duty cycle
     // Case("PWM_2 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
     // Case("PWM_2 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
     // Case("PWM_2 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
     //Case("PWM_2 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500>, greentea_failure_handler),    // Test 500ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_3 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_3 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
-    // Case("PWM_3 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
-    //Case("PWM_3 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_3, MBED_CONF_APP_DIO_4, 500>, greentea_failure_handler),    // Test 500ms Frequency with 10% to 90% duty cycle
+    // Case("PWM_3 Duty Cycle 10ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, D16, D17, 10 >, greentea_failure_handler),   // Test 10ms Frequency with 10% to 90% duty cycle
+    // Case("PWM_3 Duty Cycle 30ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, D16, D17, 30 >, greentea_failure_handler),   // Test 30ms Frequency with 10% to 90% duty cycle
+    // Case("PWM_3 Duty Cycle 100ms", PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, D16, D17, 100>, greentea_failure_handler),   // Test 100ms Frequency with 10% to 90% duty cycle
+    //Case("PWM_3 Duty Cycle 500ms",  PWM_DutyCycle_Test< MBED_CONF_APP_PWM_3, D16, D17, 500>, greentea_failure_handler),    // Test 500ms Frequency with 10% to 90% duty cycle
 };
 
 Specification specification(test_setup, cases);
